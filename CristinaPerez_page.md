@@ -1,16 +1,16 @@
 # Cristina Pérez
 
-[Cristina Pérez](https://www.notion.so/Cristina-P-rez-110958171b0680bebc34cb27f6593f18?pvs=21)
+[Cristina Pérez](CristinaPerez_page.md)
 
-[Experience](https://www.notion.so/Experience-110958171b0680bb8f78e3a701279022?pvs=21)
+[Experience](Experience_page.md)
 
-[Education](https://www.notion.so/Education-110958171b068022a245f48c146ef017?pvs=21)
+[Education](Education_page.md)
 
-[Publications](https://www.notion.so/Publications-110958171b06801cbbf7eb13d8eb422e?pvs=21)
+[Publications](Publications_page.md)
 
-[Contact me](https://www.notion.so/Contact-me-110958171b06810db37bde7310b5ff0c?pvs=21)
+[Contact me](Contact_page.md)
 
-![img-VMXMhTrehcUiauxSSNVYp.jfif](9dfaf5ae-e3c0-4c8f-b1e7-7c1490a3635a.png)
+![img-VMXMhTrehcUiauxSSNVYp.jfif](HomeImage.png)
 
 # Ph.D. in Biomedical Engineering
 
