@@ -29,33 +29,34 @@ Ph.D. candidate in Biomedical Signal Interpretation & Computational Simulation (
 ---
 
 ## Follow me!
-<div style="display: flex; justify-content: space-between; align-items: center;">
-    <!-- Redes sociales alineadas a la izquierda -->
-    <div>
-        <aside style="display: inline-flex; align-items: center; margin-right: 20px;">
-            <img src="icons/linkedin.png" width="20px" style="margin-right: 5px;" />
+<div style="display: flex; justify-content: space-between; align-items: flex-start;">
+    <!-- Redes sociales alineadas a la izquierda, una debajo de otra -->
+    <div style="display: flex; flex-direction: column; align-items: flex-start;">
+        <aside style="display: inline-flex; align-items: center; margin-bottom: 10px;">
+            <img src="icons/linkedin.png" width="30px" style="margin-right: 10px;" />
             <a href="https://linkedin.com/in/cristina-perez-martinez-22426110b" target="_blank">LinkedIn</a>
         </aside>
-        
-        <aside style="display: inline-flex; align-items: center; margin-right: 20px;">
-            <img src="icons/twitter.png" width="20px" style="margin-right: 5px;" />
+
+        <aside style="display: inline-flex; align-items: center; margin-bottom: 10px;">
+            <img src="icons/twitter.png" width="30px" style="margin-right: 10px;" />
             <a href="https://x.com/Cris_Prz95" target="_blank">X</a>
         </aside>
-        
-        <aside style="display: inline-flex; align-items: center; margin-right: 20px;">
-            <img src="icons/github.png" width="20px" style="margin-right: 5px;" />
+
+        <aside style="display: inline-flex; align-items: center; margin-bottom: 10px;">
+            <img src="icons/github.png" width="30px" style="margin-right: 10px;" />
             <a href="https://github.com/CrisPhD7" target="_blank">GitHub</a>
         </aside>
-        
+
         <aside style="display: inline-flex; align-items: center;">
-            <img src="icons/researchGate.png" width="20px" style="margin-right: 5px;" />
+            <img src="icons/researchGate.png" width="30px" style="margin-right: 10px;" />
             <a href="https://www.researchgate.net/profile/Cristina-Perez-75" target="_blank">ResearchGate</a>
         </aside>
     </div>
 
     <!-- Imagen alineada a la derecha -->
     <div>
-        <img src="CrisWeb.png" alt="Cris Web" style="max-width: 50px;" />
+        <img src="CrisWeb.png" alt="Cris Web" style="max-width: 100px;" />
     </div>
 </div>
+
 
