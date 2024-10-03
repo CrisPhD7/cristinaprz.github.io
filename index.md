@@ -10,7 +10,7 @@
 
 [Contact me](Contact.md)
 
-![img-VMXMhTrehcUiauxSSNVYp.jfif](HomeImage.png)
+![homeImage.png](homeImage.png)
 
 # Ph.D. in Biomedical Engineering
 
@@ -30,24 +30,24 @@ Ph.D. candidate in Biomedical Signal Interpretation & Computational Simulation (
 
 ## Follow me!
 
-<aside>
-<img src="icons/linkedin.png" width="40px" /> [Linkedin](https://linkedin.com/in/cristina-perez-martinez-22426110b)
-
+<aside style="display: inline-flex; align-items: center;">
+    <img src="icons/linkedin.png" width="40px" style="margin-right: 10px;" />
+    <a href="[https://x.com/Cris_Prz95](https://linkedin.com/in/cristina-perez-martinez-22426110b)" target="_blank">Linkedin</a>
 </aside>
 
-<aside>
-<img src="https://www.notion.so/icons/following_blue.svg" alt="https://www.notion.so/icons/following_blue.svg" width="40px" /> [X](https://x.com/Cris_Prz95)
-
+<aside style="display: inline-flex; align-items: center;">
+    <img src="icons/twitter.png" width="40px" style="margin-right: 10px;" />
+    <a href="https://x.com/Cris_Prz95" target="_blank">X</a>
 </aside>
 
-<aside>
-<img src="https://www.notion.so/icons/branch-merge_blue.svg" alt="https://www.notion.so/icons/branch-merge_blue.svg" width="40px" /> [GitHub](https://github.com/CrisPhD7)
-
+<aside style="display: inline-flex; align-items: center;">
+    <img src="icons/github.png" width="40px" style="margin-right: 10px;" />
+    <a href="https://github.com/CrisPhD7" target="_blank">GitHub</a>
 </aside>
 
-<aside>
-<img src="https://www.notion.so/icons/book-closed_blue.svg" alt="https://www.notion.so/icons/book-closed_blue.svg" width="40px" /> [ResearchGate](https://www.researchgate.net/profile/Cristina-Perez-75)
-
+<aside style="display: inline-flex; align-items: center;">
+    <img src="icons/researchGate.png" width="40px" style="margin-right: 10px;" />
+    <a href="https://www.researchgate.net/profile/Cristina-Perez-75" target="_blank">ResearchGate</a>
 </aside>
 
 ![CrisWeb.png](CrisWeb.png)
