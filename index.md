@@ -4,7 +4,7 @@
 |[Cristina Pérez](README.md) | [Experience](Experience.md) | [Education](Education.md) | [Publications](Publications.md) | [Contact me](Contact.md)|
 |  :----: | :----: | :----: | :----: | :----: |  
 
-![homeImage.png](homeImage.png)
+![homeImage2.jpg](homeImage2.jpg)
 
 # Ph.D. in Biomedical Engineering
 
