@@ -1,14 +1,8 @@
 # Cristina Pérez
 
-[Cristina Pérez](README.md)
 
-[Experience](Experience.md)
-
-[Education](Education.md)
-
-[Publications](Publications.md)
-
-[Contact me](Contact.md)
+|[Cristina Pérez](README.md) | [Experience](Experience.md) | [Education](Education.md) | [Publications](Publications.md) | [Contact me](Contact.md)|
+|  :----: | :----: | :----: | :----: | :----: |  
 
 ![homeImage.png](homeImage.png)
 
