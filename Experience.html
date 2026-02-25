@@ -172,8 +172,7 @@ img {
 }
 
 table,
-th,
-td {
+th,	d {
 	border: 1px solid rgba(55, 53, 47, 0.09);
 	border-collapse: collapse;
 }
@@ -183,8 +182,7 @@ table {
 	border-right: none;
 }
 
-th,
-td {
+th,	d {
 	font-weight: normal;
 	padding: 0.25em 0.5em;
 	line-height: 1.5;
@@ -262,7 +260,6 @@ ol > li {
 .toggle > li > details {
 	padding-left: 1.7em;
 }
-
 .toggle > li > details > summary {
 	margin-left: -1.1em;
 }
@@ -495,7 +492,7 @@ blockquote {
 .pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
 .pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
 .pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
-.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
 .pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
 .pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
 .pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
@@ -577,77 +574,6 @@ blockquote {
 .highlight-red_background {
 	background: rgba(253, 235, 236, 1);
 }
-.block-color-default {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray {
-	color: rgba(120, 119, 116, 1);
-	fill: rgba(120, 119, 116, 1);
-}
-.block-color-brown {
-	color: rgba(159, 107, 83, 1);
-	fill: rgba(159, 107, 83, 1);
-}
-.block-color-orange {
-	color: rgba(217, 115, 13, 1);
-	fill: rgba(217, 115, 13, 1);
-}
-.block-color-yellow {
-	color: rgba(203, 145, 47, 1);
-	fill: rgba(203, 145, 47, 1);
-}
-.block-color-teal {
-	color: rgba(68, 131, 97, 1);
-	fill: rgba(68, 131, 97, 1);
-}
-.block-color-blue {
-	color: rgba(51, 126, 169, 1);
-	fill: rgba(51, 126, 169, 1);
-}
-.block-color-purple {
-	color: rgba(144, 101, 176, 1);
-	fill: rgba(144, 101, 176, 1);
-}
-.block-color-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.block-color-red {
-	color: rgba(212, 76, 71, 1);
-	fill: rgba(212, 76, 71, 1);
-}
-.block-color-default_background {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray_background {
-	background: rgba(241, 241, 239, 1);
-}
-.block-color-brown_background {
-	background: rgba(244, 238, 238, 1);
-}
-.block-color-orange_background {
-	background: rgba(251, 236, 221, 1);
-}
-.block-color-yellow_background {
-	background: rgba(251, 237, 214, 1);
-}
-.block-color-teal_background {
-	background: rgba(237, 243, 236, 1);
-}
-.block-color-blue_background {
-	background: rgba(231, 243, 248, 1);
-}
-.block-color-purple_background {
-	background: rgba(244, 240, 247, 0.8);
-}
-.block-color-pink_background {
-	background: rgba(249, 238, 243, 0.8);
-}
-.block-color-red_background {
-	background: rgba(253, 235, 236, 1);
-}
 .select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
 .select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
 .select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
@@ -680,8 +606,8 @@ blockquote {
 .checkbox-off {
 	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
 }
-	
-</style></head><body><article id="11095817-1b06-80bb-8f78-e3a701279022" class="page sans">	
+
+</style></head><body><article id="11095817-1b06-80bb-8f78-e3a701279022" class="page sans"> 
 <header style="display: flex; align-items: center;">
     <img class="icon" src="icons/maleta.png" alt="Experience icon" style="font-size: 22px;"/>
     <h1 class="page-title" style="margin: 0;">Experience</h1>
@@ -689,10 +615,18 @@ blockquote {
 <!-- ###############################################TOP PAGES LINKS############################################### -->
 <div id="11195817-1b06-80d9-87fa-edbc6d7e1f8c" class="column-list"><div id="11195817-1b06-802d-bb6b-d8b19ceed2fc" style="width:13%" class="column"><figure id="11095817-1b06-80be-bc34-cb27f6593f18" class="block-color-gray link-to-page"><a href="index" style="font-size: 22px;"><img class="icon" src="icons/casa.png"/>Home</a></figure></div><div id="11195817-1b06-80e2-a064-c0e113135063" style="width:21%" class="column"><figure id="11095817-1b06-80bb-8f78-e3a701279022" class="block-color-gray link-to-page"><a href="Experience" style="font-size: 22px;"><img class="icon" src="icons/maleta.png"/>Experience</a></figure></div><div id="11195817-1b06-807a-b5b5-c6c5de24e7a0" style="width:19%" class="column"><figure id="11095817-1b06-8022-a245-f48c146ef017" class="block-color-gray link-to-page"><a href="Education" style="font-size: 22px;"><img class="icon" src="icons/libro.png"/>Education</a></figure></div><div id="11195817-1b06-80b5-ba96-ce6aee6928f5" style="width:22%" class="column"><figure id="11095817-1b06-801c-bbf7-eb13d8eb422e" class="block-color-gray link-to-page"><a href="Publications" style="font-size: 22px;"><img class="icon" src="icons/impresora.png"/>Publications</a></figure></div><div id="11195817-1b06-8062-9e09-cdb8a6556e0a" style="width:25%" class="column"><figure id="11095817-1b06-810d-b37b-de7310b5ff0c" class="block-color-gray link-to-page"><a href="Courses" style="font-size: 22px;"><img class="icon" src="icons/learning3.png"/>Learning Journey</a></figure></div></div>
 <!-- ############################################################################################################  -->
-<div class="page-body"><p id="11095817-1b06-802f-a37e-d9d69222a6ac" class=""></p><h1 id="11195817-1b06-8031-bdd5-fd59df6868c7" class=""><span style="border-bottom:0.05em solid">Research experience</span></h1><div id="11195817-1b06-803c-9b4b-f50e57ba973c" class="column-list"><div id="11195817-1b06-80a3-a932-da51966ed0ae" style="width:15%" class="column"><figure id="11195817-1b06-802a-8a67-dacc9c5aa6a0" class="image"><a href="https://bsicos.i3a.es/wp-content/uploads/2020/09/logo-bsicos-txt-abajo-150.png"><img src="https://bsicos.i3a.es/wp-content/uploads/2020/09/logo-bsicos-txt-abajo-150.png"/></a></figure></div><div id="11195817-1b06-809e-bba3-c5df97f06048" style="width:78%" class="column"><h2 id="11195817-1b06-80e2-a776-efbd315a77a5" class="">Biomedical Signal Interpretation &amp; Computational Simulation Group</h2></div></div><h3 id="11195817-1b06-803b-8d10-d6e20fa2d333" class="">Instituto Universitario de Investigación en Ingeniería de Aragón (Spain) | 09/2020-02/2025</h3><p id="11195817-1b06-8049-85c4-da25b72fe7a6" class="" style="text-align: justify;">Development of my Ph.D. thesis, focused on studying ECG-derived markers, such as the QT interval adaptation time to gradual heart rate changes, as a marker of ventricular repolarization heterogeneities.</p><p id="11195817-1b06-80c3-bafe-c814e77ba755" class="">
-</p>
-<hr id="11195817-1b06-807c-8cdf-e346cc478c15"/>
-<h1 id="11195817-1b06-8052-9669-f6190fecc53b" class=""><span style="border-bottom:0.05em solid">Industry experience</span></h1><div id="11195817-1b06-80e8-bd7d-cd7a0535295f" class="column-list"><div id="11195817-1b06-800e-bb8a-dddaa65b4796" style="width:20%" class="column"><figure id="11195817-1b06-804e-a866-c8fb40ea0daf" class="image" style="text-align:center"><a href="https://eldulze.es/wp-content/uploads/2020/07/logo-El-dulze.png"><img src="https://eldulze.es/wp-content/uploads/2020/07/logo-El-dulze.png"/></a></figure></div><div id="11195817-1b06-800b-8234-e0d44c923e06" style="width:70%" class="column"><h2 id="11195817-1b06-80d8-af99-ec2ea31d565c" class="">R&D Intern</h2></div></div><h3 id="11195817-1b06-80c7-87e4-cf03bce1af25" class="">El Dulze (Murcia, Spain) | 07/2016-09/2016</h3><p id="11195817-1b06-8045-bf4e-e8387c0cf363" class="" style="text-align: justify;">During this internship, I gained hands-on experience with the configuration and programming of FANUC industrial robots. I contributed to optimizing production by reprogramming robot codes, and I collaborated in the implementation of Omron PLCs and artificial vision systems to enhance the performance and autonomy of robotic tasks.</p><p id="11095817-1b06-81d3-bf96-e0c7561ff057" class="">
-<hr id="11195817-1b06-807c-8cdf-e346cc478c15"/>
+<div class="page-body"><p id="11095817-1b06-802f-a37e-d9d69222a6ac" class=""></p>
+
 <h1 id="11195817-1b06-8052-9669-f6190fecc53b" class=""><span style="border-bottom:0.05em solid">Academic experience</span></h1><div id="11195817-1b06-80e8-bd7d-cd7a0535295f" class="column-list"><div id="11195817-1b06-800e-bb8a-dddaa65b4796" style="width:20%" class="column"><figure id="11195817-1b06-804e-a866-c8fb40ea0daf" class="image" style="text-align:center"><a href="https://arahealth.com/wp-content/uploads/2021/10/unizar.png"><img src="https://arahealth.com/wp-content/uploads/2021/10/unizar.png"/></a></figure></div><div id="11195817-1b06-800b-8234-e0d44c923e06" style="width:78%" class="column"><h2 id="11195817-1b06-80d8-af99-ec2ea31d565c" class="">Área de Ingeniería Tecnologías y Servicios Telecomunicación</h2></div></div><h3 id="11195817-1b06-80c7-87e4-cf03bce1af25" class="">Universidad de Zaragoza (Spain) | 09/2020-12/2022</h3><p id="11195817-1b06-8045-bf4e-e8387c0cf363" class="" style="text-align: justify;">Delivered practical sessions for the courses “Signals and Systems” and “Application of Digital Signal Processing”, part of the second and fourth-year Bachelor's Degree in Telecommunications Engineering curriculum. Achieved outstanding teaching evaluations.</p><p id="11095817-1b06-81d3-bf96-e0c7561ff057" class="">
+</p>
+
+<hr id="11195817-1b06-807c-8cdf-e346cc478c15"/>
+
+<p id="11095817-1b06-802f-a37e-d9d69222a6ac" class=""></p><h1 id="11195817-1b06-8031-bdd5-fd59df6868c7" class=""><span style="border-bottom:0.05em solid">Research experience</span></h1><div id="11195817-1b06-803c-9b4b-f50e57ba973c" class="column-list"><div id="11195817-1b06-80a3-a932-da51966ed0ae" style="width:15%" class="column"><figure id="11195817-1b06-802a-8a67-dacc9c5aa6a0" class="image"><a href="https://bsicos.i3a.es/wp-content/uploads/2020/09/logo-bsicos-txt-abajo-150.png"><img src="https://bsicos.i3a.es/wp-content/uploads/2020/09/logo-bsicos-txt-abajo-150.png"/></a></figure></div><div id="11195817-1b06-809e-bba3-c5df97f06048" style="width:78%" class="column"><h2 id="11195817-1b06-80e2-a776-efbd315a77a5" class="">Biomedical Signal Interpretation &amp; Computational Simulation Group</h2></div></div><h3 id="11195817-1b06-803b-8d10-d6e20fa2d333" class="">Instituto Universitario de Investigación en Ingeniería de Aragón (Spain) | 09/2020-02/2025</h3><p id="11195817-1b06-8049-85c4-da25b72fe7a6" class="" style="text-align: justify;">Development of my Ph.D. thesis, focused on studying ECG-derived markers, such as the QT interval adaptation time to gradual heart rate changes, as a marker of ventricular repolarization heterogeneities.</p><p id="11195817-1b06-80c3-bafe-c814e77ba755" class="">
+</p>
+
+<hr id="11195817-1b06-807c-8cdf-e346cc478c15"/>
+
+<h1 id="11195817-1b06-8052-9669-f6190fecc53b" class=""><span style="border-bottom:0.05em solid">Industry experience</span></h1><div id="11195817-1b06-80e8-bd7d-cd7a0535295f" class="column-list"><div id="11195817-1b06-800e-bb8a-dddaa65b4796" style="width:20%" class="column"><figure id="11195817-1b06-804e-a866-c8fb40ea0daf" class="image" style="text-align:center"><a href="https://eldulze.es/wp-content/uploads/2020/07/logo-El-dulze.png"><img src="https://eldulze.es/wp-content/uploads/2020/07/logo-El-dulze.png"/></a></figure></div><div id="11195817-1b06-800b-8234-e0d44c923e06" style="width:70%" class="column"><h2 id="11195817-1b06-80d8-af99-ec2ea31d565c" class="">R&amp;D Intern</h2></div></div><h3 id="11195817-1b06-80c7-87e4-cf03bce1af25" class="">El Dulze (Murcia, Spain) | 07/2016-09/2016</h3><p id="11195817-1b06-8045-bf4e-e8387c0cf363" class="" style="text-align: justify;">During this internship, I gained hands-on experience with the configuration and programming of FANUC industrial robots. I contributed to optimizing production by reprogramming robot codes, and I collaborated in the implementation of Omron PLCs and artificial vision systems to enhance the performance and autonomy of robotic tasks.</p><p id="11095817-1b06-81d3-bf96-e0c7561ff057" class="">
+<hr id="11195817-1b06-807c-8cdf-e346cc478c15"/>
 </p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
