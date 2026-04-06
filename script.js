@@ -79,4 +79,38 @@ document.addEventListener('DOMContentLoaded', () => {
     fadeElements.forEach(el => {
         appearOnScroll.observe(el);
     });
+
+    // 5. Number Counter Animation for Stats Bar
+    const counters = document.querySelectorAll('.stat-number');
+    let counted = false;
+
+    const counterObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !counted) {
+                counters.forEach(counter => {
+                    const updateCount = () => {
+                        const target = +counter.getAttribute('data-target');
+                        const count = +counter.innerText;
+                        
+                        const inc = target / 40; 
+                        
+                        if (count < target) {
+                            counter.innerText = Math.ceil(count + inc);
+                            setTimeout(updateCount, 40);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    updateCount();
+                });
+                counted = true;
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+    
+    const statsWrapper = document.querySelector('.stats-wrapper');
+    if(statsWrapper) {
+        counterObserver.observe(statsWrapper);
+    }
 });
