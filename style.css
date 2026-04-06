@@ -1,16 +1,16 @@
 :root {
-    --primary: #2c3e50;
-    --secondary: #8ab6d6;
-    --accent: #d4a5a5;
-    --accent-light: #f4e8e8;
-    --bg-light: #fcfdfe;
+    --primary: #2a2522;
+    --secondary: #e07f56;
+    --accent: #eeb18a;
+    --accent-light: #fae4d7;
+    --bg-light: #fcf8f5;
     --bg-white: #ffffff;
-    --text-main: #3b4252;
-    --text-muted: #738290;
-    --border: #e8ecef;
-    --shadow-sm: 0 1px 3px rgba(44, 62, 80, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(44, 62, 80, 0.05), 0 2px 4px -1px rgba(44, 62, 80, 0.03);
-    --shadow-lg: 0 10px 15px -3px rgba(44, 62, 80, 0.05), 0 4px 6px -2px rgba(44, 62, 80, 0.03);
+    --text-main: #4a423e;
+    --text-muted: #7d726c;
+    --border: #ece3db;
+    --shadow-sm: 0 1px 3px rgba(42, 37, 34, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(42, 37, 34, 0.05), 0 2px 4px -1px rgba(42, 37, 34, 0.03);
+    --shadow-lg: 0 10px 15px -3px rgba(42, 37, 34, 0.05), 0 4px 6px -2px rgba(42, 37, 34, 0.03);
     --font-main: 'Inter', sans-serif;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -661,9 +661,10 @@ footer {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(to bottom, rgba(252, 253, 254, 0.9), rgba(252, 253, 254, 1)), url('hero_bg.png') no-repeat center center/cover;
+    background: linear-gradient(to bottom, rgba(252, 248, 245, 0.65), rgba(252, 248, 245, 0.85)), url('hero_bg.png') no-repeat center center/cover;
     position: relative;
     padding: 120px 2rem 4rem;
+    border-bottom: 2px solid var(--border);
 }
 
 .hero-fullscreen-content {
