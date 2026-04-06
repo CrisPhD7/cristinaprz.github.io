@@ -81,18 +81,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 5. Number Counter Animation for Stats Bar
-    const counters = document.querySelectorAll('.stat-number');
+    const statNumbers = document.querySelectorAll('.stat-number');
+    const statCircles = document.querySelectorAll('.circle-progress');
     let counted = false;
 
     const counterObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting && !counted) {
-                counters.forEach(counter => {
+                
+                // Numbers
+                statNumbers.forEach(counter => {
                     const updateCount = () => {
                         const target = +counter.getAttribute('data-target');
                         const count = +counter.innerText;
-                        
-                        const inc = target / 40; 
+                        const inc = target / 30;
                         
                         if (count < target) {
                             counter.innerText = Math.ceil(count + inc);
@@ -103,6 +105,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     };
                     updateCount();
                 });
+
+                // Circles
+                statCircles.forEach(circle => {
+                    circle.style.strokeDashoffset = '0';
+                });
+
                 counted = true;
                 observer.unobserve(entry.target);
             }
