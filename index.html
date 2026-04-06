@@ -1,717 +1,308 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Cristina Pérez</title><style>
-/* cspell:disable-file */
-/* webkit printing magic: print all background colors */
-html {
-	-webkit-print-color-adjust: exact;
-}
-* {
-	box-sizing: border-box;
-	-webkit-print-color-adjust: exact;
-}
-
-html,
-body {
-	margin: 0;
-	padding: 0;
-}
-@media only screen {
-	body {
-		margin: 2em auto;
-		max-width: 900px;
-		color: rgb(55, 53, 47);
-	}
-}
-
-body {
-	line-height: 1.5;
-	white-space: pre-wrap;
-}
-
-a,
-a.visited {
-	color: inherit;
-	text-decoration: underline;
-}
-
-.pdf-relative-link-path {
-	font-size: 80%;
-	color: #444;
-}
-
-h1,
-h2,
-h3 {
-	letter-spacing: -0.01em;
-	line-height: 1.2;
-	font-weight: 600;
-	margin-bottom: 0;
-}
-
-.page-title {
-	font-size: 2.5rem;
-	font-weight: 700;
-	margin-top: 0;
-	margin-bottom: 0.75em;
-}
-
-h1 {
-	font-size: 2.08rem;
-	margin-top: 1.875rem;
-}
-
-h2 {
-	font-size: 1.7rem;
-	margin-top: 1.5rem;
-}
-
-h3 {
-	font-size: 1.3rem;
-	margin-top: 1.25rem;
-}
-
-.source {
-	border: 1px solid #ddd;
-	border-radius: 3px;
-	padding: 1.5em;
-	word-break: break-all;
-}
-
-.callout {
-	border-radius: 3px;
-	padding: 1rem;
-}
-
-figure {
-	margin: 1.25em 0;
-	page-break-inside: avoid;
-}
-
-figcaption {
-	opacity: 0.5;
-	font-size: 85%;
-	margin-top: 0.5em;
-}
-
-mark {
-	background-color: transparent;
-}
-
-.indented {
-	padding-left: 1.5em;
-}
-
-hr {
-	background: transparent;
-	display: block;
-	width: 100%;
-	height: 1px;
-	visibility: visible;
-	border: none;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
-}
-
-img {
-	max-width: 100%;
-}
-
-@media only print {
-	img {
-		max-height: 100vh;
-		object-fit: contain;
-	}
-}
-
-@page {
-	margin: 1in;
-}
-
-.collection-content {
-	font-size: 0.875rem;
-}
-
-.column-list {
-	display: flex;
-	justify-content: space-between;
-}
-
-.column {
-	padding: 0 1em;
-}
-
-.column:first-child {
-	padding-left: 0;
-}
-
-.column:last-child {
-	padding-right: 0;
-}
-
-.table_of_contents-item {
-	display: block;
-	font-size: 0.875rem;
-	line-height: 1.3;
-	padding: 0.125rem;
-}
-
-.table_of_contents-indent-1 {
-	margin-left: 1.5rem;
-}
-
-.table_of_contents-indent-2 {
-	margin-left: 3rem;
-}
-
-.table_of_contents-indent-3 {
-	margin-left: 4.5rem;
-}
-
-.table_of_contents-link {
-	text-decoration: none;
-	opacity: 0.7;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
-}
-
-table,
-th,
-td {
-	border: 1px solid rgba(55, 53, 47, 0.09);
-	border-collapse: collapse;
-}
-
-table {
-	border-left: none;
-	border-right: none;
-}
-
-th,
-td {
-	font-weight: normal;
-	padding: 0.25em 0.5em;
-	line-height: 1.5;
-	min-height: 1.5em;
-	text-align: left;
-}
-
-th {
-	color: rgba(55, 53, 47, 0.6);
-}
-
-ol,
-ul {
-	margin: 0;
-	margin-block-start: 0.6em;
-	margin-block-end: 0.6em;
-}
-
-li > ol:first-child,
-li > ul:first-child {
-	margin-block-start: 0.6em;
-}
-
-ul > li {
-	list-style: disc;
-}
-
-ul.to-do-list {
-	padding-inline-start: 0;
-}
-
-ul.to-do-list > li {
-	list-style: none;
-}
-
-.to-do-children-checked {
-	text-decoration: line-through;
-	opacity: 0.375;
-}
-
-ul.toggle > li {
-	list-style: none;
-}
-
-ul {
-	padding-inline-start: 1.7em;
-}
-
-ul > li {
-	padding-left: 0.1em;
-}
-
-ol {
-	padding-inline-start: 1.6em;
-}
-
-ol > li {
-	padding-left: 0.2em;
-}
-
-.mono ol {
-	padding-inline-start: 2em;
-}
-
-.mono ol > li {
-	text-indent: -0.4em;
-}
-
-.toggle {
-	padding-inline-start: 0em;
-	list-style-type: none;
-}
-
-/* Indent toggle children */
-.toggle > li > details {
-	padding-left: 1.7em;
-}
-
-.toggle > li > details > summary {
-	margin-left: -1.1em;
-}
-
-.selected-value {
-	display: inline-block;
-	padding: 0 0.5em;
-	background: rgba(206, 205, 202, 0.5);
-	border-radius: 3px;
-	margin-right: 0.5em;
-	margin-top: 0.3em;
-	margin-bottom: 0.3em;
-	white-space: nowrap;
-}
-
-.collection-title {
-	display: inline-block;
-	margin-right: 1em;
-}
-
-.page-description {
-    margin-bottom: 2em;
-}
-
-.simple-table {
-	margin-top: 1em;
-	font-size: 0.875rem;
-	empty-cells: show;
-}
-.simple-table td {
-	height: 29px;
-	min-width: 120px;
-}
-
-.simple-table th {
-	height: 29px;
-	min-width: 120px;
-}
-
-.simple-table-header-color {
-	background: rgb(247, 246, 243);
-	color: black;
-}
-.simple-table-header {
-	font-weight: 500;
-}
-
-time {
-	opacity: 0.5;
-}
-
-.icon {
-	display: inline-block;
-	max-width: 1.2em;
-	max-height: 1.2em;
-	text-decoration: none;
-	vertical-align: text-bottom;
-	margin-right: 0.5em;
-}
-
-img.icon {
-	border-radius: 3px;
-}
-
-.user-icon {
-	width: 1.5em;
-	height: 1.5em;
-	border-radius: 100%;
-	margin-right: 0.5rem;
-}
-
-.user-icon-inner {
-	font-size: 0.8em;
-}
-
-.text-icon {
-	border: 1px solid #000;
-	text-align: center;
-}
-
-.page-cover-image {
-	display: block;
-	object-fit: cover;
-	width: 100%;
-	max-height: 30vh;
-}
-
-.page-header-icon {
-	font-size: 3rem;
-	margin-bottom: 1rem;
-}
-
-.page-header-icon-with-cover {
-	margin-top: -0.72em;
-	margin-left: 0.07em;
-}
-
-.page-header-icon img {
-	border-radius: 3px;
-}
-
-.link-to-page {
-	margin: 1em 0;
-	padding: 0;
-	border: none;
-	font-weight: 500;
-}
-
-p > .user {
-	opacity: 0.5;
-}
-
-td > .user,
-td > time {
-	white-space: nowrap;
-}
-
-input[type="checkbox"] {
-	transform: scale(1.5);
-	margin-right: 0.6em;
-	vertical-align: middle;
-}
-
-p {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
-.image {
-	border: none;
-	margin: 1.5em 0;
-	padding: 0;
-	border-radius: 0;
-	text-align: center;
-}
-
-.code,
-code {
-	background: rgba(135, 131, 120, 0.15);
-	border-radius: 3px;
-	padding: 0.2em 0.4em;
-	border-radius: 3px;
-	font-size: 85%;
-	tab-size: 2;
-}
-
-code {
-	color: #eb5757;
-}
-
-.code {
-	padding: 1.5em 1em;
-}
-
-.code-wrap {
-	white-space: pre-wrap;
-	word-break: break-all;
-}
-
-.code > code {
-	background: none;
-	padding: 0;
-	font-size: 100%;
-	color: inherit;
-}
-
-blockquote {
-	font-size: 1.25em;
-	margin: 1em 0;
-	padding-left: 1em;
-	border-left: 3px solid rgb(55, 53, 47);
-}
-
-.bookmark {
-	text-decoration: none;
-	max-height: 8em;
-	padding: 0;
-	display: flex;
-	width: 100%;
-	align-items: stretch;
-}
-
-.bookmark-title {
-	font-size: 0.85em;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	height: 1.75em;
-	white-space: nowrap;
-}
-
-.bookmark-text {
-	display: flex;
-	flex-direction: column;
-}
-
-.bookmark-info {
-	flex: 4 1 180px;
-	padding: 12px 14px 14px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.bookmark-image {
-	width: 33%;
-	flex: 1 1 180px;
-	display: block;
-	position: relative;
-	object-fit: cover;
-	border-radius: 1px;
-}
-
-.bookmark-description {
-	color: rgba(55, 53, 47, 0.6);
-	font-size: 0.75em;
-	overflow: hidden;
-	max-height: 4.5em;
-	word-break: break-word;
-}
-
-.bookmark-href {
-	font-size: 0.75em;
-	margin-top: 0.25em;
-}
-
-.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
-.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
-.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
-.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
-.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
-.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
-.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
-.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
-.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
-.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
-.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
-.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
-.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.highlight-default {
-	color: rgba(55, 53, 47, 1);
-}
-.highlight-gray {
-	color: rgba(120, 119, 116, 1);
-	fill: rgba(120, 119, 116, 1);
-}
-.highlight-brown {
-	color: rgba(159, 107, 83, 1);
-	fill: rgba(159, 107, 83, 1);
-}
-.highlight-orange {
-	color: rgba(217, 115, 13, 1);
-	fill: rgba(217, 115, 13, 1);
-}
-.highlight-yellow {
-	color: rgba(203, 145, 47, 1);
-	fill: rgba(203, 145, 47, 1);
-}
-.highlight-teal {
-	color: rgba(68, 131, 97, 1);
-	fill: rgba(68, 131, 97, 1);
-}
-.highlight-blue {
-	color: rgba(51, 126, 169, 1);
-	fill: rgba(51, 126, 169, 1);
-}
-.highlight-purple {
-	color: rgba(144, 101, 176, 1);
-	fill: rgba(144, 101, 176, 1);
-}
-.highlight-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.highlight-red {
-	color: rgba(212, 76, 71, 1);
-	fill: rgba(212, 76, 71, 1);
-}
-.highlight-default_background {
-	color: rgba(55, 53, 47, 1);
-}
-.highlight-gray_background {
-	background: rgba(241, 241, 239, 1);
-}
-.highlight-brown_background {
-	background: rgba(244, 238, 238, 1);
-}
-.highlight-orange_background {
-	background: rgba(251, 236, 221, 1);
-}
-.highlight-yellow_background {
-	background: rgba(251, 237, 214, 1);
-}
-.highlight-teal_background {
-	background: rgba(237, 243, 236, 1);
-}
-.highlight-blue_background {
-	background: rgba(231, 243, 248, 1);
-}
-.highlight-purple_background {
-	background: rgba(244, 240, 247, 0.8);
-}
-.highlight-pink_background {
-	background: rgba(249, 238, 243, 0.8);
-}
-.highlight-red_background {
-	background: rgba(253, 235, 236, 1);
-}
-.block-color-default {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray {
-	color: rgba(120, 119, 116, 1);
-	fill: rgba(120, 119, 116, 1);
-}
-.block-color-brown {
-	color: rgba(159, 107, 83, 1);
-	fill: rgba(159, 107, 83, 1);
-}
-.block-color-orange {
-	color: rgba(217, 115, 13, 1);
-	fill: rgba(217, 115, 13, 1);
-}
-.block-color-yellow {
-	color: rgba(203, 145, 47, 1);
-	fill: rgba(203, 145, 47, 1);
-}
-.block-color-teal {
-	color: rgba(68, 131, 97, 1);
-	fill: rgba(68, 131, 97, 1);
-}
-.block-color-blue {
-	color: rgba(51, 126, 169, 1);
-	fill: rgba(51, 126, 169, 1);
-}
-.block-color-purple {
-	color: rgba(144, 101, 176, 1);
-	fill: rgba(144, 101, 176, 1);
-}
-.block-color-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.block-color-red {
-	color: rgba(212, 76, 71, 1);
-	fill: rgba(212, 76, 71, 1);
-}
-.block-color-default_background {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray_background {
-	background: rgba(241, 241, 239, 1);
-}
-.block-color-brown_background {
-	background: rgba(244, 238, 238, 1);
-}
-.block-color-orange_background {
-	background: rgba(251, 236, 221, 1);
-}
-.block-color-yellow_background {
-	background: rgba(251, 237, 214, 1);
-}
-.block-color-teal_background {
-	background: rgba(237, 243, 236, 1);
-}
-.block-color-blue_background {
-	background: rgba(231, 243, 248, 1);
-}
-.block-color-purple_background {
-	background: rgba(244, 240, 247, 0.8);
-}
-.block-color-pink_background {
-	background: rgba(249, 238, 243, 0.8);
-}
-.block-color-red_background {
-	background: rgba(253, 235, 236, 1);
-}
-.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
-.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
-.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
-.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
-.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
-.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
-.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
-.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
-.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
-.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
-.select-value-color-yellow { background-color: rgba(249, 228, 188, 1); }
-.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
-.select-value-color-pageGlass { background-color: undefined; }
-.select-value-color-washGlass { background-color: undefined; }
-
-.checkbox {
-	display: inline-flex;
-	vertical-align: text-bottom;
-	width: 16;
-	height: 16;
-	background-size: 16px;
-	margin-left: 2px;
-	margin-right: 5px;
-}
-
-.checkbox-on {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-
-.checkbox-off {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-	
-</style></head><body><article id="11095817-1b06-80bb-8f78-e3a701279022" class="page sans">
-<header style="display: flex; align-items: center; justify-content: center;">
-    <a class="page-title" style="margin: 0;" style="font-size: 40px;">Cristina Pérez</a>
-</header>
-<!-- ###############################################TOP PAGES LINKS############################################### -->
-<div id="11195817-1b06-80d9-87fa-edbc6d7e1f8c" class="column-list"><div id="11195817-1b06-802d-bb6b-d8b19ceed2fc" style="width:13%" class="column"><figure id="11095817-1b06-80be-bc34-cb27f6593f18" class="block-color-gray link-to-page"><a href="index" style="font-size: 22px;"><img class="icon" src="icons/casa.png"/>Home</a></figure></div><div id="11195817-1b06-80e2-a064-c0e113135063" style="width:21%" class="column"><figure id="11095817-1b06-80bb-8f78-e3a701279022" class="block-color-gray link-to-page"><a href="Experience" style="font-size: 22px;"><img class="icon" src="icons/maleta.png"/>Experience</a></figure></div><div id="11195817-1b06-807a-b5b5-c6c5de24e7a0" style="width:19%" class="column"><figure id="11095817-1b06-8022-a245-f48c146ef017" class="block-color-gray link-to-page"><a href="Education" style="font-size: 22px;"><img class="icon" src="icons/libro.png"/>Education</a></figure></div><div id="11195817-1b06-80b5-ba96-ce6aee6928f5" style="width:22%" class="column"><figure id="11095817-1b06-801c-bbf7-eb13d8eb422e" class="block-color-gray link-to-page"><a href="Publications" style="font-size: 22px;"><img class="icon" src="icons/impresora.png"/>Publications</a></figure></div><div id="11195817-1b06-8062-9e09-cdb8a6556e0a" style="width:25%" class="column"><figure id="11095817-1b06-810d-b37b-de7310b5ff0c" class="block-color-gray link-to-page"><a href="Courses" style="font-size: 22px;"><img class="icon" src="icons/learning3.png"/>Learning Journey</a></figure></div></div>
-<!-- ###############################################INFORMATION############################################### -->	
-<figure id="11095817-1b06-807d-aaf9-f14f6e39f132" class="image"><a href="homeImage12.png"><img style="width:1500px" src="homeImage12.png"/></a></figure>
-<h1 id="11095817-1b06-81eb-8475-c2ca5a73a081" class=""><mark class="highlight-blue">About me</mark></h1><h3 id="11195817-1b06-80d2-8284-c6daee9a079d" class="" style="text-align: justify;">Ph.D. in Biomedical Engineering with a strong background in advanced signal processing. My research bridges cardiovascular health assessment (through ECG analysis) and the biomechanics of human locomotion. • Technical expertise: Extensive experience in MATLAB for algorithm design and R for data visualization and advanced statistics. • Academic profile: Passionate lecturer in Biomedical Engineering courses. • Research impact: Proven track record in scientific publications, supported by competitive funding, with broad experience in international and multidisciplinary collaborations.</p><p id="11195817-1b06-8026-8298-e480de6f2b60" class=""></p><hr id="11095817-1b06-81a7-b8ad-e3fcd069e17f"/><hr id="11095817-1b06-812b-827c-e900f28ae182"/><h1 id="5510b633-5cfe-477f-a0a5-20d0095d4b02" class=""><mark class="highlight-blue">Current position</mark></h1><h3 id="c7ca8f05-9f65-4613-b732-9216994f2f4d" class="" style="text-align: justify;">I am currently a Teaching and Research Staff member at the School of Architecture and Technology at Universidad San Jorge (USJ, Spain). As a researcher in the UNLOC group at USJ, my research focuses on studying the limits of human locomotion from a biomechanical and physiological perspective, addressing cardiovascular, musculoskeletal, and neurological pathologies, as well as human performance. In addition to my research, I serve as a lecturer for the Bachelor’s Degree in Biomedical Engineering, teaching core courses such as Control Engineering and Instrumentation Techniques. Furthermore, I provide teaching support for the course ‘Fundamentals of Biomechanics’ within the Master’s Degree in Biomechanics of Human Locomotion.</p><p id="11095817-1b06-8006-8b5c-e25da3aadde0" class=""></p>
-<hr id="11095817-1b06-80f7-aca8-ecaa796df9a4"/><hr id="11095817-1b06-80c1-a1c2-e3a7f19fb4bb"/><h1 id="11095817-1b06-81d1-990d-ea803fdd3e32" class=""><mark class="highlight-blue">Contact me!</mark></h1><div style="display: flex; justify-content: space-between; align-items: center;">
-    <div style="display: flex; flex-direction: column; align-items: flex-start;">
-        <aside style="display: inline-flex; align-items: center; margin-bottom: 10px;" >
-            <img src="icons/sobre.png" width="30px" style="margin-right: 10px;" style="font-size: 22px;"/>
-            <a href="/cdn-cgi/l/email-protection#1c7f6c796e7966716e68665c7369687073737732796f" target="_blank" style="font-size: 22px;">Email</a>
-        </aside> 
-	<aside style="display: inline-flex; align-items: center; margin-bottom: 10px;" >
-            <img src="icons/linkedin.png" width="30px" style="margin-right: 10px;" style="font-size: 22px;"/>
-            <a href="https://linkedin.com/in/cristina-perez-martinez-22426110b" target="_blank" style="font-size: 22px;">LinkedIn</a>
-        </aside>
-        <aside style="display: inline-flex; align-items: center; margin-bottom: 10px;">
-            <img src="icons/twitter.png" width="30px" style="margin-right: 10px;" style="font-size: 22px;"/>
-            <a href="https://x.com/Cris_Prz95" target="_blank" style="font-size: 22px;">X</a>
-        </aside>
-        <aside style="display: inline-flex; align-items: center; margin-bottom: 10px;">
-            <img src="icons/github.png" width="30px" style="margin-right: 10px;" style="font-size: 22px;"/>
-            <a href="https://github.com/CrisPhD7" target="_blank" style="font-size: 22px;">GitHub</a>
-        </aside>
-        <aside style="display: inline-flex; align-items: center; margin-bottom: 10px;">
-            <img src="icons/researchGate.png" width="30px" style="margin-right: 10px;" style="font-size: 22px;"/>
-            <a href="https://www.researchgate.net/profile/Cristina-Perez-75" target="_blank" style="font-size: 22px;">ResearchGate</a>
-        </aside>
-    </div>
-    <div>
-        <img src="CrisWeb.png" alt="Cris Web" style="max-width:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristina Pérez | Biomedical Engineer</title>
+    <meta name="description" content="Portfolio of Cristina Pérez, Ph.D. in Biomedical Engineering, specializing in signal processing, ECG analysis, and human locomotion.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Decoration -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Cristina Pérez</a>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#learning" class="nav-link">Learning</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class='bx bx-menu'></i>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        
+        <!-- HEADER / ABOUT SECTION -->
+        <section id="about" class="section fade-in">
+            <div class="header-content">
+                <div class="header-text">
+                    <p class="greeting">Hello, I'm</p>
+                    <h1 class="main-title">Cristina Pérez</h1>
+                    <h2 class="subtitle">Ph.D. in Biomedical Engineering</h2>
+                    
+                    <div class="bio-card">
+                        <p>With a strong background in <strong>advanced signal processing</strong>, my research bridges cardiovascular health assessment (through ECG analysis) and the biomechanics of human locomotion.</p>
+                        <ul class="highlights">
+                            <li><i class='bx bx-code-alt'></i> <strong>Technical expertise:</strong> Extensive experience in MATLAB for algorithm design and R for data visualization and advanced statistics.</li>
+                            <li><i class='bx bx-chalkboard'></i> <strong>Academic profile:</strong> Passionate lecturer in Biomedical Engineering courses.</li>
+                            <li><i class='bx bx-globe'></i> <strong>Research impact:</strong> Proven track record in scientific publications, supported by competitive funding, and international collaborations.</li>
+                        </ul>
+                    </div>
+
+                    <div class="current-position">
+                        <h3><i class='bx bx-briefcase-alt'></i> Current Position</h3>
+                        <p>I am a Teaching and Research Staff member at the School of Architecture and Technology at Universidad San Jorge (USJ, Spain). I research within the UNLOC group, focusing on the limits of human locomotion from a biomechanical and physiological perspective. I also serve as a lecturer for the Bachelor’s Degree in Biomedical Engineering.</p>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="mailto:cperez@usj.es" target="_blank" title="Email" class="social-icon"><i class='bx bx-envelope'></i></a>
+                        <a href="https://linkedin.com/in/cristina-perez-martinez-22426110b" target="_blank" title="LinkedIn" class="social-icon"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://x.com/Cris_Prz95" target="_blank" title="X (Twitter)" class="social-icon"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://github.com/CrisPhD7" target="_blank" title="GitHub" class="social-icon"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.researchgate.net/profile/Cristina-Perez-75" target="_blank" title="ResearchGate" class="social-icon"><img src="icons/researchGate.png" alt="ResearchGate" style="width: 24px; height: 24px; filter: grayscale(100%) contrast(500%); opacity: 0.7;"></a>
+                    </div>
+                </div>
+                <div class="header-image-container">
+                    <img src="CrisWeb.png" alt="Cristina Pérez" class="profile-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="section fade-in">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                
+                <h3 class="timeline-category"><i class='bx bxs-school' ></i> Academic Experience</h3>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Escuela de Arquitectura y Tecnología</h4>
+                        <h5>Universidad San Jorge (Spain) <span>| 09/2025 - Present</span></h5>
+                        <p>Delivered theoretical lectures and practical sessions for "Control Engineering", "Instrumentation Techniques" and "Biomedical Instrumentation", part of the Bachelor's Degree in Biomedical Engineering curriculum. All courses taught entirely in English. Furthermore, I provide teaching support for the course 'Fundamentals of Biomechanics' within the Master's Degree.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Área de Ingeniería, Tecnologías y Servicios de Telecomunicación</h4>
+                        <h5>Universidad de Zaragoza (Spain) <span>| 09/2020 - 12/2022</span></h5>
+                        <p>Delivered practical sessions for the courses “Signals and Systems” and “Application of Digital Signal Processing”, part of the second and fourth-year Bachelor's Degree in Telecommunications Engineering curriculum. Achieved outstanding teaching evaluations.</p>
+                    </div>
+                </div>
+
+                <h3 class="timeline-category"><i class='bx bx-microscope' ></i> Research Experience</h3>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Unlimited Locomotion Group</h4>
+                        <h5>Universidad San Jorge (Spain) <span>| 09/2025 - Present</span></h5>
+                        <p>Development of research activities focused on the study of innovative ECG-derived markers extracted from exercise stress tests in endurance amateur athletes for early detection of cardiovascular maladaptation and sudden cardiac death prevention, while providing technological support for the processing and interpretation of biomechanical data.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Biomedical Signal Interpretation & Computational Simulation Group</h4>
+                        <h5>Instituto Universitario de Investigación en Ingeniería de Aragón <span>| 09/2020 - 02/2025</span></h5>
+                        <p>Development of my Ph.D. thesis, focused on studying ECG-derived markers, such as the QT interval adaptation time to gradual heart rate changes, as a marker of ventricular repolarization heterogeneities.</p>
+                    </div>
+                </div>
+
+                <h3 class="timeline-category"><i class='bx bx-buildings'></i> Industry Experience</h3>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>R&D Intern</h4>
+                        <h5>El Dulze (Murcia, Spain) <span>| 07/2016 - 09/2016</span></h5>
+                        <p>Gained hands-on experience with the configuration and programming of FANUC industrial robots. Contributed to optimizing production by reprogramming robot codes, and collaborated in the implementation of Omron PLCs and artificial vision systems.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section id="education" class="section fade-in">
+            <h2 class="section-title">Education</h2>
+            <div class="cards-grid">
+                
+                <div class="card education-card">
+                    <div class="card-icon"><i class='bx bxs-graduation' ></i></div>
+                    <h3>Doctorate in Biomedical Engineering</h3>
+                    <h4>Universidad de Zaragoza (Unizar)</h4>
+                    <p class="date">09/2019 – 02/2025</p>
+                    <p class="thesis"><strong>Ph.D. thesis title:</strong> Quantification of QT Interval Adaptation Time to Gradual Changes in Heart Rate and its Use for Cardiac Risk Stratification.</p>
+                </div>
+
+                <div class="card education-card">
+                    <div class="card-icon"><i class='bx bxs-book-bookmark' ></i></div>
+                    <h3>Master’s degree in Biomedical Engineering</h3>
+                    <h4>Universidad de Zaragoza (Unizar)</h4>
+                    <p class="date">09/2017 – 02/2019</p>
+                    <p class="thesis"><strong>Master thesis title:</strong> Estimación de la respuesta fisiológica en entornos hiperbáricos mediante modelado computacional basado en redes neuronales artificiales.</p>
+                </div>
+
+                <div class="card education-card">
+                    <div class="card-icon"><i class='bx bxs-book' ></i></div>
+                    <h3>Bachelor’s degree in Industrial Electronics and Automotive Engineering</h3>
+                    <h4>Universidad Politécnica de Cartagena (UPCT)</h4>
+                    <p class="date">09/2013 – 09/2017</p>
+                    <p class="thesis"><strong>Bachelor thesis title:</strong> Diseño y experimentación de una nueva pinza quirúrgica basada en materiales inteligentes (SMA) para cirugía de mínima invasión.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PUBLICATIONS SECTION -->
+        <section id="publications" class="section fade-in">
+            <h2 class="section-title">Publications</h2>
+            
+            <div class="pub-section">
+                <h3><i class='bx bx-book-content' ></i> Ph.D. Thesis</h3>
+                <ul class="pub-list">
+                    <li><a href="https://1drv.ms/b/c/74b3b7a85769cf3d/EfrGK6ttB-1Ak5AXQ4YVq-EBhgkYagh0k51TOCroNNbTsg?e=U0LiRW" target="_blank" class="pub-link"><strong>C. Pérez (2025)</strong></a></li>
+                </ul>
+            </div>
+
+            <div class="pub-section">
+                <h3><i class='bx bx-news' ></i> Journal Publications</h3>
+                <ul class="pub-list">
+                    <li><a href="https://ieeexplore.ieee.org/document/11153048" target="_blank" class="pub-link"><strong>C. Pérez</strong>, J. P. Martínez, J. Ramírez, T. Kenttä, J. Junttila, A. Kiviniemi, J. Perkiömäki, H. Huikuri, E. Pueyo and P. Laguna, “Sudden Cardiac Death Risk Prediction from QT–RR Adaptation Time Lag Computed from Exercise Stress Test ECG”, in IEEE Transactions on Biomedical Engineering, 2025.</a></li>
+                    <li><a href="https://doi.org/10.1109/TBME.2024.3410008" target="_blank" class="pub-link"><strong>C. Pérez</strong>, E. Pueyo, J. P. Martínez, J. Viik, L. Sörnmo and P. Laguna, “Performance Evaluation of QT-RR Adaptation Time Lag Estimation in Exercise Stress Testing”, in IEEE Transactions on Biomedical Engineering, vol. 71, no. 11, pp. 3170-3180, 2024.</a></li>
+                    <li><a href="https://doi.org/10.1109/TBME.2023.3288701" target="_blank" class="pub-link">L. Bachi, H. Halvaei, <strong>C. Pérez</strong> et al., “ECG Modeling for Simulation of Arrhythmias in Time-Varying Conditions”, in IEEE Transactions on Biomedical Engineering, vol. 70, no. 12, pp. 3449-3460, 2023.</a></li>
+                    <li><a href="https://doi.org/10.1016/j.bspc.2023.105056" target="_blank" class="pub-link"><strong>C. Pérez</strong>, E. Pueyo, J. P. Martínez, J. Viik and P. Laguna, “QT interval time lag in response to heart rate changes during stress test for coronary artery disease diagnosis”, Biomedical Signal Processing and Control, vol. 86, p. 105056, 2023.</a></li>
+                    <li><a href="https://doi.org/10.1371/journal.pone.0280901" target="_blank" class="pub-link"><strong>C. Pérez</strong>, R. Cebollada, K.A. Mountris, J.P. Martínez, P. Laguna, E. Pueyo, "The role of β-adrenergic stimulation in QT interval adaptation to heart rate during stress test” PLoS One, vol. 18, no 1, p. e0280901, 2023.</a></li>
+                </ul>
+            </div>
+
+            <div class="pub-section">
+                <h3><i class='bx bx-group' ></i> Conference Publications</h3>
+                <ul class="pub-list">
+                    <li><a href="https://doi.org/10.1109/ESGCO63003.2024.10767014" target="_blank" class="pub-link"><strong>C. Pérez</strong>, E. Pueyo, J. P. Martínez, L. Sörnmo and P. Laguna, “QT-RR Adaptation Time Lag Estimation and its Dependence on Heart Rate Trend Frequency Content in Exercise Stress Testing”, ESGCO 2024.</a></li>
+                    <li><strong>C. Pérez</strong>, E. Pueyo, J. P. Martínez, L. Sörnmo and P. Laguna, ”Estimadores del retardo entre las series de QT y RR en registros ECG de prueba de esfuerzo: evaluación en simulación", CASEIB 2023.</li>
+                    <li><a href="https://doi.org/10.22489/CinC.2023.235" target="_blank" class="pub-link"><strong>C. Pérez</strong>, E. Pueyo, J. P. Martínez, L. Sörnmo and P. Laguna, “Evaluation of a QT Adaptation Time Estimator for ECG Exercise Stress Test in Controlled Simulation”, CinC 2023.</a></li>
+                    <li><a href="https://doi.org/10.1109/EMBC40787.2023.10340130" target="_blank" class="pub-link">S. Romagnoli, <strong>C. Pérez</strong>, L. Burattini, E. Pueyo, M. Morettini, A. Sbrollini, J.P. Martínez, P. Laguna, “Model-based Estimators of QT Series Time Delay in Following Heart-Rate Changes”, EMBC 2023.</a></li>
+                    <li><strong>C. Pérez</strong>, E. Pueyo, J. P. Martínez, L. Sörnmo and P. Laguna, “Simulación de señales ECG incluyendo dinámica del intervalo PQ con el ritmo cardiaco y ruido muscular variante en el tiempo”, CASEIB 2022.</li>
+                    <li><a href="https://doi.org/10.23919/CinC53138.2021.9662880" target="_blank" class="pub-link">R. Cebollada, <strong>C. Pérez</strong>, K. A. Mountris, J. P. Martínez, P. Laguna and E. Pueyo, “Mechanisms Underlying QT Interval Adaptation Behind Heart Rate During Stress Test”, CinC 2021.</a></li>
+                    <li><a href="https://doi.org/10.1109/IEEECONF53345.2021.9723261" target="_blank" class="pub-link"><strong>C. Pérez</strong>, A. Martín-Yebra, J. Viik, J. P. Martínez, E. Pueyo and P. Laguna, “Eigenvector-based spatial ECG filtering improves QT delineation in stress test recordings”, Asilomar 2021.</a></li>
+                    <li><span class="highlight-text">Young Investigator Award for the best oral presentation.</span> “Characterization of Impaired Ventricular Repolarization by Quantification of QT Delay after Heart Rate Changes in Stress Test”, 17th STAFF/MALT Symposium, 2021.</li>
+                    <li><strong>C. Pérez</strong>, E. Pueyo, J. P. Martínez, J. Viik and P. Laguna, “Characterization of impaired repolarization by quantification of the QT delay in response to heart rate changes from stress test recordings”, ISCE 2021.</li>
+                    <li><strong>C. Pérez</strong>, E. Pueyo, J. P. Martínez, J. Viik and P. Laguna, "Retardo entre QT y RR en registros de prueba de esfuerzo como indicador de la heterogeneidad de la repolarización ventricular", CASEIB 2020.</li>
+                    <li><a href="https://doi.org/10.22489/CinC.2020.194" target="_blank" class="pub-link"><strong>C. Pérez</strong>, E. Pueyo, J. P. Martínez, J. Viik and P. Laguna, “Characterization of Impaired Ventricular Repolarization by Quantification of QT Delayed Response to Heart Rate Changes in Stress Test”, CinC 2020.</a></li>
+                    <li><a href="https://doi.org/10.1109/ESGCO49734.2020.9158186" target="_blank" class="pub-link"><strong>C. Pérez</strong>, E. Pueyo, J. P. Martínez, J. Viik and P. Laguna, “Characterization of impaired repolarization by quantification of the QT delay in response to heart rate changes from stress test recordings”, ESGCO 2020.</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- LEARNING SECTION -->
+        <section id="learning" class="section fade-in">
+            <h2 class="section-title">Learning Journey</h2>
+            
+            <div class="timeline compact-timeline">
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot highlight-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Coming Soon</h4>
+                        <ul class="learning-list">
+                            <li>To be updated...</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>2025</h4>
+                        <ul class="learning-list">
+                            <li><strong>Physical Activity</strong> in Research (Barcelona Institute for Global Health, España)</li>
+                            <li>Introducción a la <strong>Ciencia de Datos</strong> Biomédicos y <strong>Machine Learning</strong> (Barcelona Institute for Global Health, España)</li>
+                            <li>Supervised <strong>Machine Learning</strong>: Regression and <strong>Classification</strong> (DeepLearning.AI & Universidad de Stanford - Coursera)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>2023</h4>
+                        <ul class="learning-list">
+                            <li><strong>Big Data</strong> Analysis (Timisoara University, Rumanía)</li>
+                            <li>Annual School "the <strong>Bioengineering</strong> of <strong>Sport</strong>" (Gruppo Nazionale de Bioingegneria, Milán, Italia)</li>
+                            <li>Vida después del Doctorado (grupo organizador) (Instituto de Investigación en Ingeniería de Aragón, España)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>2022</h4>
+                        <ul class="learning-list">
+                            <li>Curso Introducción a la <strong>programación científica</strong> con <strong>Python</strong> (Universidad de Zaragoza, España)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>2021</h4>
+                        <ul class="learning-list">
+                            <li>Curso de Introducción a <strong>R</strong> (Universidad de Zaragoza, España)</li>
+                            <li>Curso Introducción a la <strong>Inteligencia Artificial</strong> (Universidad de Zaragoza, España)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>2020</h4>
+                        <ul class="learning-list">
+                            <li>Curso de <strong>Gestión de I+D+i en empresa</strong> (Universidad de Zaragoza, España)</li>
+                            <li>Curso Herramientas avanzadas de <strong>hojas de cálculo</strong> (Universidad de Zaragoza, España)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>2019</h4>
+                        <ul class="learning-list">
+                            <li>Programa INCOOVA: <strong>emprendimiento</strong> (Confederación Regional de Organizaciones empresariales de Murcia, España)</li>
+                            <li>Reparación de <strong>propuestas de investigación</strong> en <strong>tecnologías sanitarias</strong> (Universidad Politécnica de Cartagena, España)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>2015 - 2017</h4>
+                        <ul class="learning-list">
+                            <li>UPCT Racing Team: diseño y fabricación de un <strong>bólido eléctrico</strong> (Universidad Politécnica de Cartagena, España) <em>[Years: 2015, 2016, 2017]</em></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Cristina Pérez. Built with precision and care.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
