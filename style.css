@@ -598,11 +598,80 @@ footer {
     transform: translateY(0);
 }
 
+/* NEW HERO CLASSIC (ABOUT) */
+.hero-classic {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 2rem;
+}
+
+.hero-classic-top {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.avatar-hero {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: var(--shadow-lg);
+    background: var(--bg-white);
+    border: 3px solid var(--text-muted);
+}
+
+.hero-classic-titles .main-title {
+    font-size: 3rem;
+    margin-bottom: 0.25rem;
+}
+
+.hero-classic-titles .subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-socials {
+    margin-top: 1.5rem;
+}
+
+.hero-classic-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.hero-description {
+    font-size: 1.15rem;
+    color: var(--secondary);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.hero-intro-card, .hero-skills-card {
+    height: 100%;
+    margin-bottom: 0;
+}
+
 /* RESPONSIVE */
 @media (max-width: 850px) {
     .header-content {
         flex-direction: column-reverse;
         text-align: center;
+    }
+    
+    .hero-classic-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-classic-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-socials {
+        justify-content: center;
     }
     
     .current-position, .bio-card {
