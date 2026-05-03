@@ -44,12 +44,35 @@
                 
                 <!-- TEMPLATE FOR A PROJECT -->
                 <!-- Copy from <div class="card education-card"> to </div> to add more -->
-                <div class="card education-card">
-                    <div class="card-icon"><i class='bx bx-bulb'></i></div>
-                    <h3>Project Idea 1: [Title]</h3>
-                    <h4>Area: [e.g. Biosignals / Biomechanics]</h4>
-                    <p class="date">Available for 2026</p>
-                    <p class="thesis"><strong>Description:</strong> Brief description of the project objective. Here you can explain what the student will be doing and the required skills (e.g. MATLAB, Python).</p>
+                <div class="card education-card" style="grid-column: 1 / -1;">
+                    <div style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
+                        <div style="flex: 1; min-width: 300px;">
+                            <div class="card-icon"><i class='bx bxs-printer'></i></div>
+                            <h3>Project Idea 1: 3D-Printed Finger-Clip Housing for Pulse Oximeter</h3>
+                            <h4>Area: Biomedical Instrumentation & 3D Design</h4>
+                            <p class="date">Available for 2026/2027</p>
+                            <p class="thesis" style="margin-top: 1rem;"><strong>Description:</strong> The optical signal acquired by the DFRobot Fermion MAX30102 pulse oximetry sensor is highly sensitive to ambient light, which introduces noise and artifacts into physiological recordings. This project aims to design and manufacture a custom 3D-printed housing to encapsulate the sensor, effectively isolating it from external light sources to improve signal quality.</p>
+                            
+                            <h4 style="margin-top: 1.5rem; color: var(--text-primary);"><i class='bx bx-check-circle'></i> Key Design Requirements</h4>
+                            <ul style="list-style-position: inside; color: var(--text-secondary); margin-top: 0.5rem; line-height: 1.6;">
+                                <li><strong>Ergonomic Clip:</strong> A finger-clip mechanism for comfortable, reliable, and light-tight finger placement.</li>
+                                <li><strong>Modular Mounting:</strong> A mounting system that holds the sensor board firmly during use, but allows for easy tool-less removal to visually inspect the bare electronics or replace the board.</li>
+                            </ul>
+
+                            <h4 style="margin-top: 1.5rem; color: var(--text-primary);"><i class='bx bx-map-alt'></i> Roadmap & Implementation</h4>
+                            <ol style="list-style-position: inside; color: var(--text-secondary); margin-top: 0.5rem; line-height: 1.6;">
+                                <li><strong>Software Selection:</strong> Evaluate and select appropriate 3D CAD software suitable for 3D printing.</li>
+                                <li><strong>Dimensional Analysis:</strong> Precisely measure the sensor board, optical components, and connection pins.</li>
+                                <li><strong>Prototyping:</strong> Design the clip mechanism, considering the mechanical properties required for repeated use.</li>
+                                <li><strong>Material Selection & Budgeting:</strong> Select appropriate materials to block light and ensure comfort. Develop a comprehensive budget detailing the costs of all components, materials, and printing resources (required for university funding justification).</li>
+                                <li><strong>Validation:</strong> Assemble the printed parts and perform signal acquisition tests to validate the reduction of ambient light interference.</li>
+                            </ol>
+                        </div>
+                        <div style="flex: 0 0 350px;">
+                            <img src="images/project1.png" alt="Concept visualization of a 3D-printed pulse oximeter clip" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-md);">
+                            <p style="text-align: center; font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.5rem;">Concept visualization</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="card education-card">
